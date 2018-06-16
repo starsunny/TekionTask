@@ -14,5 +14,5 @@ u=i[7]
 #x= "(count1 + "Times" + Usr + "User")"
 def In(client) :
                 #client.send("recieve only")
-                client.send("dialog --msgbox \" Invalid user....\" 6 30")
+                client.send("dialog --msgbox \"No. '${count1}' IP '${IPa}' User '${Usr}'\"  6 30")
 

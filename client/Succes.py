@@ -16,7 +16,7 @@ Usr=s[7]
 #Controller Function 1 
 def Success(client) :			
 		#client.send("recieve only")
-                client.send("dialog --msgbox \" Successfull....\" 6 30")
+                client.send("dialog --msgbox \"No. '${count1}' IP '${IPa}' User '${Usr}'\"  6 30")
                 #client.send("dialog --infobox \"Details should be here\" 07 16")
 		#client.send("recieve only")
 

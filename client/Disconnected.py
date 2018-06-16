@@ -14,5 +14,5 @@ User=d[8]
 
 def Dis(client) :
                 #client.send("recieve only")
-                client.send("dialog --msgbox \" Disconnected....\" 6 30")
+                client.send("dialog --msgbox \"No. '${count1}' IP '${IPa}' User '${Usr}'\"  6 30")
 
