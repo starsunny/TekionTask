@@ -1,5 +1,4 @@
-#!/usr/bin/python
-
+#!/usr/bin/env python
 from os import system
 from commands import getstatusoutput
 from time import sleep
@@ -17,7 +16,7 @@ Usr=s[7]
 #Controller Function 1 
 def Success(client) :			
                # client.send("Got it")					
-		client.send("dialog --infobox \"result \" 07 16")
+		client.send("dialog --infobox \"Details should be here\" 07 16")
 		#client.send("recieve only")
 
 
