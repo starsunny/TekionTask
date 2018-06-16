@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  task:
+  - name: Copying files from server to Clients
+    copy:
+      src: client
+      dest: /home/ubuntu/
+
+  - name: Setup Cron
+    cron:
+      name: "Daemon"
+      minute: "*"
+      hour: "*"
+      job: "python /home/ubuntu/client/Client.py &"
+
