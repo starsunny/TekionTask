@@ -1,11 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/python
+
+
 from os import system
 from commands import getstatusoutput
 
 
 def menu(client) :
 	while True :	
-		client.send("dialog --menu \"Select your requirement\" 15 30 4 1 \"Succesful User\" 2 \"Disconnected User\" 3 \"Invalid User\" ")
+		client.send("dialog --menu \"SSH login attempts\" 15 20 4  1 \"Successfull\" 2 \"Disconnect\" 3 \"Invalid\" 4 \"Exit\" ")
 		choice = client.recv(10)
 
 		if choice == "1" :   
@@ -15,5 +17,9 @@ def menu(client) :
 			import Disconnected
 			Disconnected.Dis(client)
 		elif choice == "3" : 
-			import Invalid
-			Invalid.In(client)
+			import Invald
+			Invald.In(client)
+                elif choice == "4" :
+			#client.send("recieve only")
+			client.send("dialog --msgbox \"Thank You... \n Exiting....\" 5 18")
+			client.send("false")
