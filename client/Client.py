@@ -10,7 +10,7 @@ ip = ("172.31.61.102 ")
 ob.bind((ip,14012))
 ob.listen(6)
 client,addr = ob.accept()
-client.send("dialog --infobox \"  Welcome \n ***********\" 5 25")
+client.send("dialog --infobox \"   Welcome\n ***********\" 5 25")
 sleep(1)
 import menu
 menu.menu(client)

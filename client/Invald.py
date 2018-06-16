@@ -9,10 +9,6 @@ Invald=("grep 'Invalid' /var/log/auth.log | awk '{print $11,$9}' | uniq -c ")
 result=str(subprocess.check_output(Invald, shell=True))
 i=result.split(" ")
 cnt=i[5]
-iadr=i[6]
-u=i[7]
-#x= "(count1 + "Times" + Usr + "User")"
-def In(client) :
-                #client.send("recieve only")
-                client.send("dialog --msgbox \"No. '${count1}' IP '${IPa}' User '${Usr}'\"  6 30")
 
+def In(client) :
+               client.send("dialog --msgbox \"Invalid logins?\n" + cnt + "\n  \"   10 50")
