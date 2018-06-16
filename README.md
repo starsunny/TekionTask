@@ -28,7 +28,9 @@ I am using Asible for the Automation at the server side
 2. create ansible user (useradd ansible) (passwd ansible)
 3. Generate the ssh key (ssh-keygen)
 4. Copy the ssh key to clients (ssh-copy-id ansible@<IP>) enter the password and copy will be done
-5. Add your clients to ansible (vim /etc/ansible/hosts)
+5. Now, entry for ansible user in sudoers file (vim /etc/sudoers)
+6. Add this line "ansible ALL:ALL  NOPASSWD:ALL"  
+7. Add your clients to ansible (vim /etc/ansible/hosts)
 Add following lines to the hosts file
 [client1]
 <IP>
