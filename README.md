@@ -35,7 +35,7 @@ IPa=s[6] change it to Ipa=[7]
 same changes in all 3 files
 -variables names are different in all files
 
-Why we need to madr this changes:
+Why we need to made this changes:
 because,  sometimes /var/log/auth.log saves data in list with extra spaces.
 and as we are greping our data from this file, we need to take care about the extra spaces.
 
@@ -68,4 +68,12 @@ then repeat from step3.
 It will copy the client directory to the both clients in /home/ubuntu directory
 and setup the cron job
 
+### Note ###
+I have donw it for check the ubuntu user only, If you wanna check all the user
+then you need to change one line in client/Succes.py,
+you need to make some changes in the last line of this  file.
+change variable in the line client.send("dialog --msgbox <result variable>,
+  add this result in this line and remove all other variable.
+  basically you need to replace the all other variable and put variable name result there.
+  thwn you will get details pf all the other users.
 
