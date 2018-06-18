@@ -6,11 +6,11 @@ Requirements:
 
 ### How it works: ###
 Here, I am using client-server architecture by Python socket programming.
-what you need to do id, Create 3 ubuntu servers(2 clients and 1 server), Copy the Server.py file to the server and copy the client folder
+what you need to do is, Create 3 ubuntu servers(2 clients and 1 server), Copy the Server.py file to the server and copy the client folder
 to the Clients in /home/ubuntu dir.
 or git clone "git clone https://github.com/starsunny/TekionTask
 do git clone on the Both clients and server
-here you will find 1 client folder whixh will be used for clients and
+here you will find 1 client folder which will be used for clients and
 one Server.py which will be used for server.
 Now at the client side you need to change the server Ip in client/Client.py (ip = str("IP")) on both clients, and now you need to setup cron jobs for 
 Client.py.
